@@ -1,0 +1,140 @@
+.catalog {
+
+  &__products {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+.products {
+
+  &__list {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  &__item {
+    background-color: $white;
+    padding:35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 130px;
+    height: 188px;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    align-self: left;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-self: left;
+    margin-bottom: 15px;
+  }
+
+  &__wrap-price-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__button {
+    @include primary-button;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 20px 8px 46px;
+    background-image: url('../../../img/catalog_union-button.png');
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
+    background-position: 20px 10px;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-light;
+    }
+
+    &:active {
+      background-color: $primary-dark;
+    }
+
+    &:disabled {
+      background-color: $grey;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.pagination {
+
+  &__item {
+
+    &--hidden {
+      visibility: hidden;
+    }
+
+    &--current .pagination__link {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $black;
+      background-color: transparent;
+    }
+
+    &:hover .pagination__link,
+    &:focus .pagination__link {
+      background-color: $secondary;
+    }
+
+    &:active .pagination__link {
+      color: $primary-dark;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+
+    &--current {
+
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  &__svg {
+  }
+}

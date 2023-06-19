@@ -1,0 +1,59 @@
+.catalog__form-filter {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+
+.form-filter__legend {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+}
+
+.form-filter__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-filter {
+
+  &__button {
+    width: 280px;
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    @include primary-button;
+
+    &--ok {
+      margin-bottom: 20px;
+    }
+
+    &--reset {
+      background-color: $white;
+      color: $primary;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $primary-light;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $primary-dark;
+    }
+
+    &:disabled {
+      background-color: $grey;
+    }
+
+    &--reset:disabled {
+      background-color: $grey-light;
+      color: $white;
+    }
+  }
+}

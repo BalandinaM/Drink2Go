@@ -1,0 +1,39 @@
+.header__user-nav {
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+
+.header__user-nav--nojs {
+  right: 0;
+}
+
+.user-nav__list {
+  display: flex;
+
+
+}
+
+.user-nav__item {
+
+}
+
+.user-nav__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.user-nav__link:active {
+  background-color: $secondary;
+}
+
+.user-nav__svg {
+
+}
+
+.user-nav__link span {
+  display: none;
+}

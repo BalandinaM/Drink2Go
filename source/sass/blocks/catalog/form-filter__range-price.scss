@@ -1,0 +1,176 @@
+.form-filter {
+
+		&__range-price {
+		}
+
+		&__range-price &__legend {
+      margin-bottom: 0;
+		}
+
+		&__wrap-range {
+
+      //Ранж не активный
+
+      &--disabled {
+
+        & .range-controls__bar {
+          background-color: $grey;
+        }
+
+        & .range-controls__toggle {
+          border: 2px solid  $grey;
+        }
+
+        & .range-controls__toggle:hover::after,
+        & .range-controls__toggle:focus::after,
+        & .range-controls__toggle:active::after {
+          display: none;
+        }
+
+        & .price-controls__input,
+        & .price-controls__input:hover,
+        & .price-controls__input:focus,
+        & .price-controls__input:active {
+          border: 2px solid $grey;
+        }
+      }
+		}
+
+		&__range-controls {
+      margin-bottom: 36px;
+      margin-top: 30px;
+      position: relative;
+		}
+
+		&__price-controls {
+		}
+}
+
+.range-controls {
+
+		&__scale {
+      width: 280px;
+      height: 2px;
+      background-color: $grey-light;
+
+      position: relative;
+		}
+
+		&__bar {
+      width: 241.26px;
+      height: 4px;
+      background-color: $primary-light;
+
+      position: absolute;
+      top: -1px;
+		}
+
+		&__toggle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: solid 2px $primary-light;
+      background-color: $white;
+
+      position: absolute;
+
+      &::after {
+        display: none;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $primary-opacity;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        display: block;
+      }
+
+      &:active::after {
+        background-color: $primary;
+      }
+
+			&--min {
+        top: -11px;
+			}
+
+			&--max {
+        top: -11px;
+        left: 240px;
+			}
+		}
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  position: relative;
+
+		&__input {
+      display: block;
+      box-sizing: border-box;
+      width: 118px;
+      padding: 6px 10px;
+      border: 2px solid $primary-light;
+      border-radius: 4px;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $black;
+		}
+
+    &__input::placeholder {
+      color: $grey;
+    }
+
+    //Убираем дефолтные кнопки
+
+    &__input::-webkit-outer-spin-button,
+    &__input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &__input,
+    &__input:hover,
+    &__input:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+      outline: none;
+    }
+
+    //Поведение в фокусе
+
+    &__input:hover,
+    &__input:focus {
+      border: 2px solid $primary-dark;
+    }
+
+    //Поведение disabled
+
+    &__input:disabled {
+      border: 2px solid $grey;
+    }
+
+    //Тире между инпутами
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 2px;
+      background-color: $grey;
+
+      position: absolute;
+      top: 18px;
+      left: 48.5%
+    }
+
+}

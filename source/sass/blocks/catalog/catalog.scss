@@ -1,0 +1,29 @@
+.catalog {
+  padding: 50px 20px;
+  background-color: $bg-grey;
+}
+
+.catalog__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary;
+  margin-bottom: 6px;
+}
+
+.catalog__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.catalog__wrap-products {
+
+}
+
