@@ -10,11 +10,12 @@
   &__list {
     display: grid;
     row-gap: 20px;
+    margin-bottom: 40px;
   }
 
   &__item {
     background-color: $white;
-    padding:35px 20px;
+    padding: 40px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +35,7 @@
     line-height: 32px;
     align-self: left;
     margin-top: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   &__description {
@@ -42,7 +43,7 @@
     font-size: 14px;
     line-height: 20px;
     align-self: left;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   &__wrap-price-and-button {

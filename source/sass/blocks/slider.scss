@@ -1,6 +1,7 @@
 .slider {
   width: 100%;
   margin: 0 auto;
+  background-color: $bg-flat-white;
 }
 
 //  Временно ограничить ширину окно
@@ -26,7 +27,7 @@
 }
 
 .slider__img {
- margin-bottom: 2px;
+ margin-bottom: 4px;
 }
 
 .slider__description {
@@ -59,7 +60,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .description__wrap-price {
