@@ -2,9 +2,19 @@
   padding: 12px 20px 6px;
   position: relative;
   border-bottom: 1px solid $secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 20px 16px;
+    margin-right: 27px;
+    border-bottom: none;
+  }
 }
 
 .header__logo {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
 }
 
 .header__title {

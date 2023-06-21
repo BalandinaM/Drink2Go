@@ -2,6 +2,12 @@
   position: absolute;
   top: 0;
   right: 60px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    right: 0;
+    margin-left: 60px;
+  }
 }
 
 .header__user-nav--nojs {
@@ -10,8 +16,6 @@
 
 .user-nav__list {
   display: flex;
-
-
 }
 
 .user-nav__item {
@@ -24,6 +28,11 @@
   align-items: center;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    justify-content: left;
+  }
 }
 
 .user-nav__link:active {

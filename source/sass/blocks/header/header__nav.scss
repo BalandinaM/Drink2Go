@@ -12,6 +12,10 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-max-width) {
@@ -66,11 +70,18 @@
 
 
 .nav__list {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+    //justify-content: right;
+  }
 }
 
 .nav__item {
   border-bottom: 1px solid $secondary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .nav__link {
@@ -84,8 +95,27 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    min-width: auto;
+    padding: 30px 20px 32px;
+
+    &--current {
+      border-bottom: 2px solid $primary;
+      color: $primary;
+    }
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
 }
 
 .nav__link:active {
   background-color: $secondary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $secondary;
+  }
 }
