@@ -40,9 +40,22 @@
       margin-bottom: 36px;
       margin-top: 30px;
       position: relative;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
 		}
 
 		&__price-controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      position: relative;
+
+      @media (min-width: $tablet-width) {
+        width: 223px;
+      }
 		}
 }
 
@@ -54,6 +67,10 @@
       background-color: $grey-light;
 
       position: relative;
+
+      @media (min-width: $tablet-width) {
+        width: 223px;
+      }
 		}
 
 		&__bar {
@@ -63,6 +80,10 @@
 
       position: absolute;
       top: -1px;
+
+      @media (min-width: $tablet-width) {
+        width: 192px;
+      }
 		}
 
 		&__toggle {
@@ -101,17 +122,12 @@
 
 			&--max {
         top: -11px;
-        left: 240px;
+        left: 179px;
 			}
 		}
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-
-  position: relative;
 
 		&__input {
       display: block;
@@ -126,7 +142,13 @@
       line-height: 24px;
       text-align: center;
       color: $black;
+
+      @media (min-width: $tablet-width) {
+        width: 87px;
+      }
 		}
+
+
 
     &__input::placeholder {
       color: $grey;

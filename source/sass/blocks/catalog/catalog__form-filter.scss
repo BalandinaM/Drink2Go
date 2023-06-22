@@ -2,6 +2,12 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    display: grid;
+    grid-template-columns: 243px 243px 242px;
+  }
 }
 
 
@@ -21,6 +27,15 @@
 
 .form-filter {
 
+  &__wrap-button {
+    grid-column: span 3;
+    width: 728px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
   &__button {
     width: 280px;
     padding: 8px 10px;
@@ -28,8 +43,16 @@
     line-height: 24px;
     @include primary-button;
 
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 8px 20px;
+      margin-top: 10px;
+    }
+
     &--ok {
-      margin-bottom: 20px;
+      @media (max-width: $mobile-max-width) {
+        margin-bottom: 20px;
+      }
     }
 
     &--reset {
