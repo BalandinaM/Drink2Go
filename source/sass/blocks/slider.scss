@@ -8,6 +8,10 @@
 
 .swiper {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .slider__title {
@@ -15,20 +19,43 @@
 }
 
 .slider__list {
-
+  @media (min-width: $tablet-width) {
+    padding-bottom: 197px;
+    background-color: $white;
+  }
 }
 
 .slider__item {
   background-color: $bg-flat-white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 270px;
+
+    &--hidden {
+      display: none;
+    }
+  }
 }
 
 .slider__img {
- margin-bottom: 4px;
+  margin-bottom: 4px;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+    position: absolute;
+    top: 540px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
+
 
 .slider__description {
 
@@ -44,6 +71,10 @@
   text-transform: uppercase;
   color: $primary;
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+  }
 }
 
 .description__title {
@@ -53,6 +84,13 @@
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    margin-bottom: 15px;
+  }
 }
 
 .description__text {
@@ -61,6 +99,11 @@
   line-height: 20px;
   text-align: center;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .description__wrap-price {
