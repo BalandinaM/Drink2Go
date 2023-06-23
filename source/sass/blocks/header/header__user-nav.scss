@@ -6,7 +6,11 @@
   @media (min-width: $tablet-width) {
     position: relative;
     right: 0;
-    margin-left: 60px;
+    margin-left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 77px;
   }
 }
 
@@ -16,10 +20,14 @@
 
 .user-nav__list {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    padding-right: 40px;
+  }
 }
 
 .user-nav__item {
-
 }
 
 .user-nav__link {
@@ -33,6 +41,13 @@
     height: 80px;
     justify-content: left;
   }
+
+  @media (min-width: $desktop-width) {
+   // display: flex;
+    width: auto;
+    height: auto;
+    padding: 30px 25px 29px 20px;
+  }
 }
 
 .user-nav__link:active {
@@ -40,9 +55,22 @@
 }
 
 .user-nav__svg {
+  width: 16px;
+  height: 16px;
 
+  @media (min-width: $desktop-width) {
+    transform: translateX(-6px) translateY(1px);
+  }
 }
 
 .user-nav__link span {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
 }

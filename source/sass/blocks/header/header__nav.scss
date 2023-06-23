@@ -74,6 +74,10 @@
     display: flex;
     //justify-content: right;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 .nav__item {
