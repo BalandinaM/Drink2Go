@@ -1,49 +1,80 @@
 .footer {
 
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $primary;
+    margin-bottom: 10px;
+  }
 
-    &__title {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.02em;
-      color: $primary;
-      margin-bottom: 10px;
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    display: block;
+    padding: 8px 0;
+  }
+
+	&__map {
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 480px;
+    }
+	}
+
+	&__wrap-logo-and-social {
+    border-bottom: 1px solid $secondary;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
     }
 
-    &__text {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      display: block;
-      padding: 8px 0;
-    }
-
-		&__map {
-      border: none;
-		}
-
-		&__wrap-logo-and-social {
-      border-bottom: 1px solid $secondary;
-
-      & .container {
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        padding-bottom: 16px;
-      }
-
-		}
-
-		&__logo {
-		}
-
-		&__social {
+    & .container {
       display: flex;
       justify-content: space-between;
-      width: 160px;
-		}
+      align-items:center;
+      padding-bottom: 16px;
+
+      @media (min-width: $tablet-width) {
+        width: 768px;
+        padding: 37px 20px 6px;
+      }
+    }
+	}
+
+	&__logo {
+    & img {
+      width: 82px;
+      height: 36px;
+
+      @media (min-width: $tablet-width) {
+        width: 170px;
+        height: 36px;
+      }
+    }
+	}
+
+	&__social {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+	}
+
+  &__wrap-market-media-contacts {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 223px 222px 223px;
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
 
 		&__market {
       border-bottom: 1px solid $secondary;
@@ -56,60 +87,59 @@
 		&__contacts {
       border-bottom: 1px solid $secondary;
 		}
+  }
 
-		&__copyright {
-
-		}
+	&__copyright {
+	}
 }
+
 .social {
 
-		&__item {
-		}
+	&__item {
+	}
 
-		&__link {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 4px;
+	&__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
 
-      &:hover,
-      &:focus {
-        background-color: $secondary;
-      }
+    &:hover,
+    &:focus {
+      background-color: $secondary;
+    }
 
-      &:active {
-        background-color: $primary-opacity;
-      }
-		}
+    &:active {
+      background-color: $primary-opacity;
+    }
+	}
 
-		&__svg {
-		}
+	&__svg {
+	}
 }
 .market {
 
-    &__wrap {
+  &__wrap {
+  }
 
+	&__title {
+	}
+
+	&__list {
+	}
+
+  &__item {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
+	}
 
-		&__title {
-
-		}
-
-		&__list {
-		}
-
-		&__item {
-      margin-bottom: 4px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-		}
-
-		&__link {
-		}
+	&__link {
+	}
 }
 .media {
 
@@ -161,6 +191,11 @@
       font-size: 14px;
       line-height: 20px;
 
+      & br {
+        @media (min-width: $tablet-width) {
+          display: none;
+        }
+      }
 		}
 }
 .copyright {
@@ -168,9 +203,13 @@
   &__svg {
     position: absolute;
     top: 0;
-    left: 235px;
+    left: 468px;
     stroke: $grey-light;
     fill: $grey-light;
+
+    @media (min-width: $tablet-width) {
+
+    }
   }
 
 		&__link {
@@ -197,6 +236,13 @@
         color: $primary-dark;
         stroke: $primary-dark;
       }
+
+      @media (min-width: $tablet-width) {
+        text-align: center;
+        padding-left: 0px;
+        margin-left: -10px;
+        margin-top: -5px;
+      }
 		}
 }
 
@@ -205,6 +251,10 @@
   width: 320px;
   margin: 0 auto;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .footer__wrap {
