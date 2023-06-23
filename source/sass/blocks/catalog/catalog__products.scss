@@ -111,15 +111,21 @@
   &__pagination {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width:$tablet-width) {
+      width: 395px;
+      margin-left: auto;
+      gap: 20px;
+    }
   }
 }
 .pagination {
 
   &__item {
 
-    &--hidden {
-      visibility: hidden;
-    }
+    //&--hidden {
+    //  visibility: hidden;
+    //}
 
     &--current .pagination__link {
       font-weight: 600;
@@ -127,6 +133,24 @@
       line-height: 24px;
       color: $black;
       background-color: transparent;
+    }
+
+    &--back .pagination__link,
+    &--onward .pagination__link {
+      @media (min-width: $tablet-width) {
+        width: auto;
+        display: block;
+        padding: 8px 20px;
+      }
+    }
+
+    &--back .pagination__link span,
+    &--onward .pagination__link span {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
     }
 
     &:hover .pagination__link,
@@ -152,15 +176,14 @@
     height: 40px;
     background-color: $white;
 
-    &--current {
-
-    }
-
-    & span {
-      display: none;
-    }
+    //&--current {
+//
+    //}
   }
 
   &__svg {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
