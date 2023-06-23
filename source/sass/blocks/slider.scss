@@ -6,13 +6,17 @@
 
 //  Временно ограничить ширину окно
 
-.swiper {
+/*.swiper {
   width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
   }
-}
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}*/
 
 .slider__title {
 
@@ -23,23 +27,37 @@
     padding-bottom: 197px;
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .slider__item {
   background-color: $bg-flat-white;
   padding: 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
     padding-bottom: 270px;
+  }
 
-    &--hidden {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 30px 60px 79px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
 .slider__img {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 4px;
   width: 280px;
   height: 280px;
@@ -53,6 +71,14 @@
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    top: 0;
+    margin-left: 44px;
   }
 }
 
@@ -75,6 +101,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 150px;
+  }
 }
 
 .description__title {
@@ -91,6 +122,10 @@
     letter-spacing: 1.12px;
     margin-bottom: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .description__text {
@@ -104,15 +139,24 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .description__wrap-price {
- display: flex;
- justify-content: space-between;
- align-items: center;
- width: 230px;
- margin: 0 auto;
- margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+}
 }
 
 .description__price {
