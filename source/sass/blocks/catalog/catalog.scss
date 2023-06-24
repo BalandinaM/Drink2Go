@@ -6,6 +6,10 @@
     padding-top: 80px;
     padding-bottom: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
 }
 
 .catalog__subtitle {
