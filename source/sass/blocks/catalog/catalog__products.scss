@@ -7,6 +7,14 @@
     @media (min-width: $tablet-width) {
       width: 728px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      grid-column: 2/3;
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+    }
+
   }
 }
 .products {
@@ -21,6 +29,12 @@
       gap: 30px;
       margin-bottom: 70px;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-row: 2/3;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
   }
 
   &__item {

@@ -1,11 +1,18 @@
 .form-filter {
 
 		&__range-price {
-		}
+      @media (min-width: $desktop-width) {
+        grid-row: 1/2;
+      }
 
-		&__range-price &__legend {
-      margin-bottom: 0;
-		}
+      & .form-filter__legend {
+        margin-bottom: 0;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 20px;
+        }
+		  }
+    }
 
 		&__wrap-range {
 
@@ -56,6 +63,10 @@
       @media (min-width: $tablet-width) {
         width: 223px;
       }
+
+      @media (min-width: $desktop-width) {
+        gap: 50px;
+      }
 		}
 }
 
@@ -71,6 +82,10 @@
       @media (min-width: $tablet-width) {
         width: 223px;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 318px;
+      }
 		}
 
 		&__bar {
@@ -83,6 +98,10 @@
 
       @media (min-width: $tablet-width) {
         width: 192px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 274px;
       }
 		}
 
@@ -123,6 +142,10 @@
 			&--max {
         top: -11px;
         left: 179px;
+
+        @media (min-width: $desktop-width) {
+          left: 274px;
+        }
 			}
 		}
 }
@@ -145,6 +168,10 @@
 
       @media (min-width: $tablet-width) {
         width: 87px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
       }
 		}
 

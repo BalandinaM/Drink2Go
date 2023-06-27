@@ -9,6 +9,13 @@
     grid-template-columns: 243px 243px 242px;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    grid-column: 1/2;
+    grid-template-rows: repeat(4, min-content);
+    margin: 0;
+  }
 }
 
 
@@ -18,6 +25,10 @@
   line-height: 24px;
   margin-left: 3px;
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .form-filter__label {
@@ -35,7 +46,16 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media (min-width: $desktop-width) {
+      width: 318px;
+      grid-row: 4/5;
+      justify-content: space-between;
+    }
   }
+
+
+
 
   &__button {
     width: 280px;
@@ -48,6 +68,11 @@
       width: auto;
       padding: 8px 20px;
       margin-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 149px;
+      margin-top: 12px;
     }
 
     &--ok {
