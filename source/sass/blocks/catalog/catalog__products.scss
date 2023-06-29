@@ -33,6 +33,7 @@
     @media (min-width: $desktop-width) {
       grid-row: 2/3;
       grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 60px;
     }
 
   }
@@ -47,6 +48,13 @@
     @media (min-width: $tablet-width) {
       padding: 50px 30px 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      &:hover {
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+
   }
 
   &__img {
