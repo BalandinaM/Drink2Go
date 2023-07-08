@@ -1,43 +1,44 @@
 .form-filter {
 
-		&__checkbox {
-      margin-bottom: 18px;
+	&__checkbox {
+    margin-bottom: 18px;
+
+    @media (min-width: $desktop-width) {
+      grid-row: 3/4;
+    }
+
+    & .form-filter__legend {
+      @media (min-width: $tablet-width) {
+        padding-left: 15px;
+      }
 
       @media (min-width: $desktop-width) {
-        grid-row: 3/4;
+        padding-left: 0;
       }
+    }
+	}
 
-      & .form-filter__legend {
-        @media (min-width: $tablet-width) {
-          padding-left: 15px;
-        }
-
-        @media (min-width: $desktop-width) {
-          padding-left: 0;
-        }
-      }
-		}
-
-		&__label {
-		}
+	&__label {
+	}
 }
+
 .checkbox {
 
-		&__list {
-		}
+	&__list {
+	}
 
-		&__item {
-      padding: 10px;
-      padding-left: 55px;
+	&__item {
+    padding: 10px;
+    padding-left: 55px;
 
-      @media (min-width: $tablet-width) {
-        padding-left: 70px;
-      }
+    @media (min-width: $tablet-width) {
+      padding-left: 70px;
+    }
 
-      @media (min-width: $desktop-width) {
-        padding-left: 51px;
-      }
-		}
+    @media (min-width: $desktop-width) {
+      padding-left: 51px;
+    }
+	}
 
 		&__input {
       &:hover + .checkbox__label::before,
@@ -91,4 +92,3 @@
       }
 		}
 }
-
