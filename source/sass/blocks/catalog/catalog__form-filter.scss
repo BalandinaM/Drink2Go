@@ -40,12 +40,14 @@
 .form-filter {
 
   &__wrap-button {
-    grid-column: span 3;
-    width: 728px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    @media (min-width: $tablet-width) {
+      grid-column: span 3;
+      width: 728px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 318px;

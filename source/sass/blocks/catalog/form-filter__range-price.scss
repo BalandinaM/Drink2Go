@@ -141,7 +141,11 @@
 
 			&--max {
         top: -11px;
-        left: 179px;
+        left: 242px;
+
+        @media (min-width: $tablet-width) {
+          left: 179px;
+        }
 
         @media (min-width: $desktop-width) {
           left: 274px;
