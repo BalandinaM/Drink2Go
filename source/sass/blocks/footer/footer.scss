@@ -21,21 +21,23 @@
 
 	&__map {
     border: none;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
       height: 480px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1440px;
       height: 540px;
     }
 	}
 
   &__wrap {
+    width: 320px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
+      width: 768px;
       display: grid;
       grid-template-columns: 223px 222px 223px;
       grid-template-rows: repeat(3, min-content);
@@ -45,6 +47,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 1440px;
       padding: 40px;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 0px;
