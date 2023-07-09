@@ -4,10 +4,6 @@
   @media (min-width: $tablet-width) {
     margin-right: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 77px;
-  }
 }
 
 .header__user-nav--nojs {
@@ -19,6 +15,7 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
+    justify-content: flex-end;
     width: 25vw;
   }
 
