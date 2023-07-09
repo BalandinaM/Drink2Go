@@ -17,6 +17,10 @@
 .user-nav__list {
   display: flex;
 
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 20px;
     padding-right: 40px;
