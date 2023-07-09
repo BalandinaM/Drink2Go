@@ -131,7 +131,8 @@
 
 .description__wrap-price {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
   width: 230px;
   margin: 0 auto;
