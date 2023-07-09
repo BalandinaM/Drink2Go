@@ -19,6 +19,7 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
+    width: 25vw;
   }
 
   @media (min-width: $desktop-width) {
