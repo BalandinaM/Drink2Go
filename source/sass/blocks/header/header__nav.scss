@@ -1,5 +1,10 @@
 .header__nav {
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin-left: -60px;
+  }
 }
 
 .nav__button {
@@ -89,6 +94,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: auto;
     border-bottom: none;
   }
 }
