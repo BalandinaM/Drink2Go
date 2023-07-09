@@ -4,24 +4,6 @@
   background-color: $bg-flat-white;
 }
 
-//  Временно ограничить ширину окно
-
-/*.swiper {
-  width: 320px;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
-}*/
-
-.slider__title {
-
-}
-
 .slider__list {
   @media (min-width: $tablet-width) {
     padding-bottom: 197px;
@@ -80,11 +62,6 @@
     top: 0;
     margin-left: 44px;
   }
-}
-
-
-.slider__description {
-
 }
 
 .description__label-new {
@@ -163,10 +140,6 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
 }
-}
-
-.description__price {
-
 }
 
 .description__price--old {

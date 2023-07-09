@@ -17,15 +17,9 @@
       }
     }
 	}
-
-	&__label {
-	}
 }
 
 .checkbox {
-
-	&__list {
-	}
 
 	&__item {
     padding: 10px;
@@ -40,55 +34,56 @@
     }
 	}
 
-		&__input {
-      &:hover + .checkbox__label::before,
-      &:focus + .checkbox__label::before {
-        background-color: $primary-opacity;
-        border: solid 2px $primary;
-      }
+  &__input {
 
-      &:checked + .checkbox__label::before {
-        background-color: $primary;
-      }
+    &:hover + .checkbox__label::before,
+    &:focus + .checkbox__label::before {
+      background-color: $primary-opacity;
+      border: solid 2px $primary;
+    }
 
-      &:checked + .checkbox__label::after {
-        transform: translateY(-0.5px) translateX(17px);
-      }
+    &:checked + .checkbox__label::before {
+      background-color: $primary;
+    }
 
-      &:disabled + .checkbox__label::before {
-        background-color: $grey-light;
-        border: none;
-      }
+    &:checked + .checkbox__label::after {
+      transform: translateY(-0.5px) translateX(17px);
+    }
 
-      &:checked:disabled + .checkbox__label::after {
-        background-color: $grey;
-      }
-		}
+    &:disabled + .checkbox__label::before {
+      background-color: $grey-light;
+      border: none;
+    }
 
-		&__label {
-      position: relative;
+    &:checked:disabled + .checkbox__label::after {
+      background-color: $grey;
+    }
+  }
 
-      &::before {
-        content: "";
-        width: 42px;
-        height: 24px;
-        box-sizing: border-box;
-        background-color: $grey;
-        border-radius: 12px;
-        position: absolute;
-        top: -4px;
-        left: -50px;
-      }
+  &__label {
+    position: relative;
 
-      &::after {
-        content: "";
-        width: 20px;
-        height: 20px;
-        background-color: $white;
-        border-radius: 50%;
-        position: absolute;
-        top: -2px;
-        left: -47.5px;
-      }
-		}
+    &::before {
+      content: "";
+      width: 42px;
+      height: 24px;
+      box-sizing: border-box;
+      background-color: $grey;
+      border-radius: 12px;
+      position: absolute;
+      top: -4px;
+      left: -50px;
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border-radius: 50%;
+      position: absolute;
+      top: -2px;
+      left: -47.5px;
+    }
+  }
 }
