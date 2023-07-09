@@ -1,7 +1,5 @@
 .header__user-nav {
-  position: absolute;
-  top: 0;
-  right: 60px;
+  margin-right: 60px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -15,7 +13,7 @@
 }
 
 .header__user-nav--nojs {
-  right: 0;
+  margin-right: 0;
 }
 
 .user-nav__list {

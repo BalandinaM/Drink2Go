@@ -1,3 +1,7 @@
+.header__nav {
+  order: 1;
+}
+
 .nav__button {
   position: absolute;
   top: 0;
@@ -66,6 +70,7 @@
 
 
 .nav__list {
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -76,7 +81,12 @@
 }
 
 .nav__item {
+  width: 100vw;
   border-bottom: 1px solid $secondary;
+
+  &:first-child {
+    border-top: 1px solid $secondary;
+  }
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
